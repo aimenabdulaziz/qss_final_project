@@ -47,8 +47,13 @@ Project `.ipynb` Scripts:
     - Merges "demographic" and "presenting_problems_no_other" using Client ID
 
   - Output: 
-    - Figure "Frequency of Presented Problems"
-    - Figure "Living Conditions at Enrollment"
+    - Merged Clean Data for 
+        -  demographics_problems_merged.pkl
+        -  emergency_crisis_services.pkl
+        -  in_patient_admissions.pkl
+        -  living_situation_change.pkl
+        -  presenting_problems.pkl
+ 
   
 - 02_data_analysis.ipynb
   - Input: SIP's START Information Reporting System (Dartmouth Data Set)
