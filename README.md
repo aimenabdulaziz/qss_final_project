@@ -5,7 +5,7 @@ Welcome to the repository for the final project of Aimen Adbulaziz, Esmeralda Ab
 Thank you for visiting our repository, and we hope that our project will provide valuable insights into the impact of COVID-19 on enrollment patterns.
 
 Project Milestones:
-- Milestone 1: Narrowing Down and Reviewing Past Projects 
+- [Milestone 1](https://www.overleaf.com/download/project/63e82343f1e8c06ce058eddf/build/186904f6dab-f6b6683f72384f16/output/output.pdf?compileGroup=priority&clsiserverid=clsi-pre-emp-c2d-c-f-vcjq&enable_pdf_caching=true&popupDownload=true): Narrowing Down and Reviewing Past Projects 
 - Milestone 2: Cleaned Data Frames and Graphs
 
 Project .ipynb Script:
