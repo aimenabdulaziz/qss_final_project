@@ -60,5 +60,5 @@ Project `.ipynb` Scripts:
   - Output: 
     - A lot of tables and outputs inside the notebook
     - Figure [Frequency of Presented Problems](https://github.com/aimenabdulaziz/qss_final_project/blob/main/output/figures/living_condition_at_enrollment_percentile.png)
-    - Figure [Living Conditions at Enrollment](https://github.com/aimenabdulaziz/qss_final_project/blob/main/output/figures/living_condition_at_enrollment.png)
+    - Figure [Living Conditions at Enrollment](https://github.com/aimenabdulaziz/qss_final_project/blob/main/output/figures/living_condition_at_enrollment_percentile.png)
 
