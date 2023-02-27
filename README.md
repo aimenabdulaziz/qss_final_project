@@ -56,11 +56,12 @@ Project `.ipynb` Scripts:
  
   
 - 02_data_analysis.ipynb
-  - Input: SIP's START Information Reporting System (Dartmouth Data Set)
+  - Input: Clean data from 01_data_cleaning_and_merging.ipynb
   - Functionality:
-    - Cleans all presenting problems by making it lowercase
-    - Eliminates "Other Presenting Problems" and checks the retention rate
-    - Merges "demographic" and "presenting_problems_no_other" using Client ID
+    - Subsets the data frame to an equal number of month pre and post covid start date
+    - Cleans the data sheet based on living situation change
+    - Drops observations that had other reasons
+    - Creates visualizations
 
   - Output: 
     - A lot of tables and outputs inside the notebook
