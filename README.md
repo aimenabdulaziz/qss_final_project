@@ -19,4 +19,5 @@ Functionality:
 
 Output: 
 -Merged Clean Data for (demographics_problems_merged.pkl, emergency_crisis_services.pkl, in_patient_admissions.pkl, living_situation_change.pkl, presenting_problems.pkl)
--
+-Figure "Frequency of Presented Problems"
+-Figure "Living Conditions at Enrollment"
