@@ -8,8 +8,15 @@ Project Milestones:
 Milestone 1: Narrowing Down and Reviewing Past Projects 
 Milestone 2: Cleaned Data Frames and Graphs
 
-Project .ipynb Scripts
+Project 01_notebook.ipynb Script
 
-Input: SIP's START Information Reporting System
-Functionality: 
-Output: Figures 
+Input: SIP's START Information Reporting System (Dartmouth Data Set)
+
+Functionality:
+-Cleans all presenting problems by making it lowercase
+-Eliminates "Other Presenting Problems" and checks the retention rate
+-Merges "demographic" and "presenting_problems_no_other" using Client ID
+
+Output: 
+-Merged Clean Data for (demographics_problems_merged.pkl, emergency_crisis_services.pkl, in_patient_admissions.pkl, living_situation_change.pkl, presenting_problems.pkl)
+-
