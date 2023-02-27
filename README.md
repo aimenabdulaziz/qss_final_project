@@ -8,7 +8,7 @@ Project Milestones:
 Milestone 1: Narrowing Down and Reviewing Past Projects 
 Milestone 2: Cleaned Data Frames and Graphs
 
-Project 01_notebook.ipynb Script
+- Project 01_notebook.ipynb Script
 
 Input: SIP's START Information Reporting System (Dartmouth Data Set)
 
