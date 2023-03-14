@@ -46,7 +46,8 @@ Project `.ipynb` Scripts:
     - Performs Logistic Regression on disability level, gender, and state to see if there is any correlation between any of this dependent variables and prevalence of aggression.
 
   - Output: 
-    - [logistic_regression_output.txt](https://github.com/aimenabdulaziz/qss_final_project/blob/main/output/logistic_regression_output.txt)
+    - [logistic_regression_output.txt](https://github.com/aimenabdulaziz/qss_final_project/blob/main/output/logistic_regression_output0.txt)
+    - [logistic_regression_output0.txt](https://github.com/aimenabdulaziz/qss_final_project/blob/main/output/logistic_regression_output1.txt)
 
 ## Repository Organization
 
@@ -139,5 +140,6 @@ This repository contains the following files:
     │   ├── ny_counties.png
     │   ├── presenting_problems_count.png
     │   └── presenting_problems_proportion.png
-    └── logistic_regression_output.txt
+    ├── logistic_regression_output0.txt
+    └── logistic_regression_output1.txt
 ```
