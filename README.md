@@ -14,32 +14,100 @@ Project Milestones:
 
 This repository contains the following files:
 ```bash
+.
 ├── LICENSE
 ├── README.md
 ├── code
-│   ├── 01_data_cleaning_and_merging.ipynb
-│   ├── 02_data_analysis.ipynb
-│   └── README.md
-├── input
+│   ├── 00_data_cleaning_and_merging.ipynb
+│   ├── 01_data_vizualization.ipynb
+│   └── 02_regression_model.ipynb
+├── data
+│   ├── Borough Boundaries
+│   │   ├── geo_export_5fbe1568-6d75-4853-9e07-5643fefb35c7.dbf
+│   │   ├── geo_export_5fbe1568-6d75-4853-9e07-5643fefb35c7.prj
+│   │   ├── geo_export_5fbe1568-6d75-4853-9e07-5643fefb35c7.shp
+│   │   └── geo_export_5fbe1568-6d75-4853-9e07-5643fefb35c7.shx
 │   ├── Dartmouth Data Set.xlsx
-│   └── README.md
+│   ├── NYS_Civil_Boundaries
+│   │   ├── Cities_Towns.cpg
+│   │   ├── Cities_Towns.dbf
+│   │   ├── Cities_Towns.prj
+│   │   ├── Cities_Towns.sbn
+│   │   ├── Cities_Towns.sbx
+│   │   ├── Cities_Towns.shp
+│   │   ├── Cities_Towns.shp.xml
+│   │   ├── Cities_Towns.shx
+│   │   ├── Counties.cpg
+│   │   ├── Counties.dbf
+│   │   ├── Counties.prj
+│   │   ├── Counties.sbn
+│   │   ├── Counties.sbx
+│   │   ├── Counties.shp
+│   │   ├── Counties.shp.xml
+│   │   ├── Counties.shx
+│   │   ├── Counties_Shoreline.cpg
+│   │   ├── Counties_Shoreline.dbf
+│   │   ├── Counties_Shoreline.prj
+│   │   ├── Counties_Shoreline.sbn
+│   │   ├── Counties_Shoreline.sbx
+│   │   ├── Counties_Shoreline.shp
+│   │   ├── Counties_Shoreline.shp.xml
+│   │   ├── Counties_Shoreline.shx
+│   │   ├── Indian_Territories.cpg
+│   │   ├── Indian_Territories.dbf
+│   │   ├── Indian_Territories.prj
+│   │   ├── Indian_Territories.sbn
+│   │   ├── Indian_Territories.sbx
+│   │   ├── Indian_Territories.shp
+│   │   ├── Indian_Territories.shp.xml
+│   │   ├── Indian_Territories.shx
+│   │   ├── State.cpg
+│   │   ├── State.dbf
+│   │   ├── State.prj
+│   │   ├── State.sbn
+│   │   ├── State.sbx
+│   │   ├── State.shp
+│   │   ├── State.shp.xml
+│   │   ├── State.shx
+│   │   ├── State_Shoreline.cpg
+│   │   ├── State_Shoreline.dbf
+│   │   ├── State_Shoreline.prj
+│   │   ├── State_Shoreline.sbn
+│   │   ├── State_Shoreline.sbx
+│   │   ├── State_Shoreline.shp
+│   │   ├── State_Shoreline.shp.xml
+│   │   ├── State_Shoreline.shx
+│   │   ├── Villages.cpg
+│   │   ├── Villages.dbf
+│   │   ├── Villages.prj
+│   │   ├── Villages.sbn
+│   │   ├── Villages.sbx
+│   │   ├── Villages.shp
+│   │   ├── Villages.shp.xml
+│   │   └── Villages.shx
+│   ├── clean_presented_problems.pkl
+│   ├── demographics_aggression_problems.pkl
+│   └── ny_counties.pkl
 └── output
-    ├── README.md
-    ├── demographics_problems_merged.pkl
-    ├── emergency_crisis_services.pkl
-    ├── figures
-    │   ├── living_condition_at_enrollment.png
-    │   ├── living_condition_at_enrollment_percentile.png
-    │   └── presenting_problems_count.png
-    ├── in_patient_admissions.pkl
-    ├── living_situation_change.pkl
-    └── presenting_problems.pkl
+    └── figures
+        ├── aggression_by_gender_year.png
+        ├── aggression_by_gender_ym.png
+        ├── aggression_over_time_my.png
+        ├── aggression_over_time_y.png
+        ├── disability_by_state.png
+        ├── disability_proportion_by_gender.png
+        ├── disability_proportion_by_gender_2019_20.png
+        ├── ny_agg_proportion.png
+        ├── ny_agg_with_inset_map.png
+        ├── ny_counties.png
+        ├── presenting_problems_count.png
+        └── presenting_problems_proportion.png
 ```
 
 ## Notebooks
 
 Project `.ipynb` Scripts:
-- 01_data_cleaning_and_merging.ipynb
+- 00_data_cleaning_and_merging.ipynb
   - Input: SIP's START Information Reporting System (Dartmouth Data Set)
   - Functionality:
     - Cleans all presenting problems by making it lowercase
@@ -48,14 +116,11 @@ Project `.ipynb` Scripts:
 
   - Output: 
     - Merged Clean Data for 
-        -  demographics_problems_merged.pkl
-        -  emergency_crisis_services.pkl
-        -  in_patient_admissions.pkl
-        -  living_situation_change.pkl
-        -  presenting_problems.pkl
+        - clean_presented_problems.pkl
+        - demographics_aggression_problems.pkl
  
   
-- 02_data_analysis.ipynb
+- 01_data_vizualization.ipynb
   - Input: Clean data from 01_data_cleaning_and_merging.ipynb
   - Functionality:
     - Subsets the data frame to an equal number of month pre and post covid start date
@@ -64,7 +129,5 @@ Project `.ipynb` Scripts:
     - Creates visualizations
 
   - Output: 
-    - A lot of tables and outputs inside the notebook
-    - Figure [Frequency of Presented Problems](https://github.com/aimenabdulaziz/qss_final_project/blob/main/output/figures/living_condition_at_enrollment_percentile.png)
-    - Figure [Living Conditions at Enrollment](https://github.com/aimenabdulaziz/qss_final_project/blob/main/output/figures/living_condition_at_enrollment_percentile.png)
+    - all the figures linked [here]()
 
