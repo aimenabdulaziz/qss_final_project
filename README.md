@@ -14,7 +14,7 @@ Project Milestones:
 
 Project `.ipynb` Scripts:
 - [00_data_cleaning_and_merging.ipynb](https://github.com/aimenabdulaziz/qss_final_project/blob/main/code/00_data_cleaning_and_merging.ipynb)
-  - Input: SIP's START Information Reporting System (Dartmouth Data Set)
+  - Input: [SIP's START Information Reporting System (Dartmouth Data Set)](https://github.com/aimenabdulaziz/qss_final_project/blob/main/data/Dartmouth%20Data%20Set.xlsx)
   - Functionality:
     - Cleans all presenting problems by making it lowercase
     - Eliminates "Other Presenting Problems" and checks the retention rate
