@@ -10,6 +10,42 @@ Project Milestones:
 - [Milestone 1](https://www.overleaf.com/read/tycrnpqwcgtj): Narrowing Down and Reviewing Past Projects 
 - Milestone 2: Cleaned the datasets and completed preliminary data analysis
 
+## Notebooks
+
+Project `.ipynb` Scripts:
+- [00_data_cleaning_and_merging.ipynb](https://github.com/aimenabdulaziz/qss_final_project/blob/main/code/00_data_cleaning_and_merging.ipynb)
+  - Input: SIP's START Information Reporting System (Dartmouth Data Set)
+  - Functionality:
+    - Cleans all presenting problems by making it lowercase
+    - Eliminates "Other Presenting Problems" and checks the retention rate
+    - Merges "demographic" and "presenting_problems_no_other" using Client ID
+    - Drops observations that had other reasons
+    - Subsets the data frame to an equal number of month pre and post covid start date
+    - Cleans the data sheet based on living situation change
+
+  - Output: 
+    - Merged Clean Data for 
+        - [clean_presented_problems.pkl](https://github.com/aimenabdulaziz/qss_final_project/blob/main/data/clean_presented_problems.pkl)
+        - [demographics_aggression_problems.pkl](https://github.com/aimenabdulaziz/qss_final_project/blob/main/data/demographics_aggression_problems.pkl)
+ 
+  
+- [01_data_vizualization.ipynb](https://github.com/aimenabdulaziz/qss_final_project/blob/main/code/01_data_vizualization.ipynb)
+  - Input: Clean data from 01_data_cleaning_and_merging.ipynb
+  - Functionality:
+    - Creates visualizations such as bar plots, line plots, and geovisualizations
+
+  - Output: 
+    - all the figures are linked [here](https://github.com/aimenabdulaziz/qss_final_project/tree/main/output/figures)
+
+- [02_regression_model.ipynb](https://github.com/aimenabdulaziz/qss_final_project/blob/main/code/02_regression_model.ipynb)
+  - Input: [clean_presented_problems.pkl](https://github.com/aimenabdulaziz/qss_final_project/blob/main/data/clean_presented_problems.pkl)
+  
+  - Functionality:
+    - Perform Logistic Regression on disability level, gender, and state to see if there is any correlation between any of this dependent variables and prevalence of aggression.
+
+  - Output: 
+    - Regression outputs included in the notebook and research paper
+
 ## Repository Organization
 
 This repository contains the following files:
@@ -103,31 +139,3 @@ This repository contains the following files:
         ├── presenting_problems_count.png
         └── presenting_problems_proportion.png
 ```
-
-## Notebooks
-
-Project `.ipynb` Scripts:
-- 00_data_cleaning_and_merging.ipynb
-  - Input: SIP's START Information Reporting System (Dartmouth Data Set)
-  - Functionality:
-    - Cleans all presenting problems by making it lowercase
-    - Eliminates "Other Presenting Problems" and checks the retention rate
-    - Merges "demographic" and "presenting_problems_no_other" using Client ID
-
-  - Output: 
-    - Merged Clean Data for 
-        - clean_presented_problems.pkl
-        - demographics_aggression_problems.pkl
- 
-  
-- 01_data_vizualization.ipynb
-  - Input: Clean data from 01_data_cleaning_and_merging.ipynb
-  - Functionality:
-    - Subsets the data frame to an equal number of month pre and post covid start date
-    - Cleans the data sheet based on living situation change
-    - Drops observations that had other reasons
-    - Creates visualizations
-
-  - Output: 
-    - all the figures linked [here]()
-
