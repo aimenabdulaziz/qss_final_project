@@ -30,27 +30,28 @@ Project `.ipynb` Scripts:
  
   
 - [01_data_vizualization.ipynb](https://github.com/aimenabdulaziz/qss_final_project/blob/main/code/01_data_vizualization.ipynb)
-  - Input: Clean data from 01_data_cleaning_and_merging.ipynb
+  - Input:
+        - [clean_presented_problems.pkl](https://github.com/aimenabdulaziz/qss_final_project/blob/main/data/clean_presented_problems.pkl)
+        - [demographics_aggression_problems.pkl](https://github.com/aimenabdulaziz/qss_final_project/blob/main/data/demographics_aggression_problems.pkl)
   - Functionality:
     - Creates visualizations such as bar plots, line plots, and geovisualizations
 
   - Output: 
-    - all the figures are linked [here](https://github.com/aimenabdulaziz/qss_final_project/tree/main/output/figures)
+    - All the figures are linked [here](https://github.com/aimenabdulaziz/qss_final_project/tree/main/output/figures)
 
 - [02_regression_model.ipynb](https://github.com/aimenabdulaziz/qss_final_project/blob/main/code/02_regression_model.ipynb)
   - Input: [clean_presented_problems.pkl](https://github.com/aimenabdulaziz/qss_final_project/blob/main/data/clean_presented_problems.pkl)
   
   - Functionality:
-    - Perform Logistic Regression on disability level, gender, and state to see if there is any correlation between any of this dependent variables and prevalence of aggression.
+    - Performs Logistic Regression on disability level, gender, and state to see if there is any correlation between any of this dependent variables and prevalence of aggression.
 
   - Output: 
-    - Regression outputs included in the notebook and research paper
+    - [logistic_regression_output.txt]()
 
 ## Repository Organization
 
 This repository contains the following files:
 ```bash
-.
 ├── LICENSE
 ├── README.md
 ├── code
@@ -125,17 +126,18 @@ This repository contains the following files:
 │   ├── demographics_aggression_problems.pkl
 │   └── ny_counties.pkl
 └── output
-    └── figures
-        ├── aggression_by_gender_year.png
-        ├── aggression_by_gender_ym.png
-        ├── aggression_over_time_my.png
-        ├── aggression_over_time_y.png
-        ├── disability_by_state.png
-        ├── disability_proportion_by_gender.png
-        ├── disability_proportion_by_gender_2019_20.png
-        ├── ny_agg_proportion.png
-        ├── ny_agg_with_inset_map.png
-        ├── ny_counties.png
-        ├── presenting_problems_count.png
-        └── presenting_problems_proportion.png
+    ├── figures
+    │   ├── aggression_by_gender_year.png
+    │   ├── aggression_by_gender_ym.png
+    │   ├── aggression_over_time_my.png
+    │   ├── aggression_over_time_y.png
+    │   ├── disability_by_state.png
+    │   ├── disability_proportion_by_gender.png
+    │   ├── disability_proportion_by_gender_2019_20.png
+    │   ├── ny_agg_proportion.png
+    │   ├── ny_agg_with_inset_map.png
+    │   ├── ny_counties.png
+    │   ├── presenting_problems_count.png
+    │   └── presenting_problems_proportion.png
+    └── logistic_regression_output.txt
 ```
